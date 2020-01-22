@@ -6,7 +6,7 @@ services:
       dockerfile: bugs/Dockerfile
     restart: always
     volumes:
-    - .:/go/src/src
+    - .:/go/src/github.com/kiramishima/microservices
     container_name: bugs
     ports:
     - 8800:8081
@@ -16,7 +16,7 @@ services:
       dockerfile: notificator/Dockerfile
     restart: always
     volumes:
-    - .:/go/src/src
+    - .:/go/src/github.com/kiramishima/microservices
     container_name: notificator
     ports:
     - 8801:8082
@@ -26,7 +26,7 @@ services:
       dockerfile: users/Dockerfile
     restart: always
     volumes:
-    - .:/go/src/src
+    - .:/go/src/github.com/kiramishima/microservices
     container_name: users
     ports:
     - 8802:8081
